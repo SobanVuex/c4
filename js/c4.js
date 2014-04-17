@@ -3,7 +3,7 @@ var el = document.getElementById.bind(document), Map, Block, Player, Game, Messa
 /**
  * The Player constructor.
  *
- * @param {Array} options
+ * @param {Object} options
  * @returns {Player}
  */
 Player = function(options) {
@@ -14,7 +14,7 @@ Player = function(options) {
 /**
  * The Block constructor.
  *
- * @param {Array} options
+ * @param {Object} options
  * @returns {Block}
  */
 Block = function(options) {
@@ -27,7 +27,7 @@ Block = function(options) {
 /**
  * The Map constructor. Holds references to all Blocks
  *
- * @param {Array} options
+ * @param {Object} options
  * @returns {Map}
  */
 Map = function(options) {
@@ -98,7 +98,7 @@ Map.prototype.addRule = function() {
 /**
  * The game constructor. Holds references to the Map, Messages and all Players
  *
- * @param {Array} options
+ * @param {Object} options
  * @returns {Game}
  */
 Game = function(options) {
@@ -115,12 +115,11 @@ Game = function(options) {
 /**
  * Add a player to the game
  *
- * @param {Array} options
+ * @param {Object} options
  * @returns {undefined}
  */
-Game.prototype.addPlayer = function(options) {
-    var player = new Player(options);
-    this.players.push(player);
+Game.prototype.addPlayer = function(player) {
+    this.players.push(new Player(player));
 };
 
 /**
