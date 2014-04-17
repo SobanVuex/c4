@@ -1,4 +1,4 @@
-c4.github.io
-============
+:video_game: c4.github.io
+=========================
 
-:video_game:
+[:arrow_forward: Play](https://sobanvuex.github.io/c4/ "Play")
