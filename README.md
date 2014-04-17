@@ -12,7 +12,7 @@
 **Parts:**
 
 - UI styles are in **[/css/c4.css](https://github.com/SobanVuex/c4/blob/gh-pages/css/c4.css)**
-- Game logic is in **[/js/c4.js](https://github.com/SobanVuex/c4/blob/gh-pages/css/c4.css)**
+- Game logic is in **[/js/c4.js](https://github.com/SobanVuex/c4/blob/gh-pages/js/c4.js)**
 
 **Time:**
 
