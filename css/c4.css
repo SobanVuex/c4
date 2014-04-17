@@ -1,0 +1,47 @@
+body {
+    color: #444;
+    font: 13px Helvetica, arial, freesans, clean, sans-serif;
+    margin: 0;
+    padding: 20px;
+    position: relative;
+}
+.board {
+    border: 1px solid #444;
+    float: left;
+    margin: 20px 0 0 20px;
+    padding: 4px;
+}
+.block {
+    border: 1px solid #ccc;
+    cursor: pointer;
+    float: left;
+    height: 64px;
+    margin: 1px;
+    width: 64px;
+}
+.block.red {
+    background-color: rgba(255, 0, 0, 0.5);
+}
+.block.blue {
+    background-color: rgba(0, 0, 255, 0.5);
+}
+.block.highlight {
+    border-color: #111;
+}
+.messages {
+    border: 1px solid #444;
+    float: left;
+    list-style: none;
+    margin: 20px 0 0 20px;
+    padding: 5px;
+    width: 200px;
+}
+.message {
+    border-bottom: 1px solid #ccc;
+}
+.message:last-child {
+    border-bottom: none;
+}
+.clear {
+    clear: both;
+}
